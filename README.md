@@ -4,5 +4,7 @@ Official repository for GMT: Guided Mask Transformer for Leaf Instance Segmentat
 ## Acknowledgements
 We thank the authors of the following repositories for opening source their code:
 https://github.com/facebookresearch/Mask2Former
+
 https://github.com/kulikovv/harmonic
+
 https://github.com/ziplab/FASeg
