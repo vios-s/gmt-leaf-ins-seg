@@ -5,7 +5,6 @@ Official repository for GMT: Guided Mask Transformer for Leaf Instance Segmentat
 - [x] Upload GMT model architecture
 - [ ] Upload training code
 - [ ] Upload checkpoints and datasets
-- ...
 
 ## Acknowledgements
 We thank the authors of the following repositories for opening source their code:
