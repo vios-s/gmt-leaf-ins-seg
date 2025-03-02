@@ -10,12 +10,6 @@ Official repository for GMT: Guided Mask Transformer for Leaf Instance Segmentat
 - GMT Training code: ./guide_train_net.py
 - Results in the paper: ./submission/results_in_paper
 
-## Progressing...
-- Download the following from Cloud Drive
-  - Datasets (split to train/val/test)
-  - COCO pretrained weights (for initialising GMT training)
-  - Trained GMT checkpoints
-
 ## Acknowledgements
 We thank the authors of the following repositories for opening source their code:
 
