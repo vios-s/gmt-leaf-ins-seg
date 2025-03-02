@@ -1,0 +1,10 @@
+_BASE_: komatsuna_rgb_r50_guide_cocopre_0.yaml
+OUTPUT_DIR: "./output/komatsuna_rgb_r50_guide_cocopre_2/"
+DATASETS:
+  TRAIN: ('komatsuna_rgb_train_coco_2',) # 540 images
+  TEST: ('komatsuna_rgb_val_coco_2',) # 180 images
+  # TEST: ('komatsuna_rgb_test_coco_2',) # 180 images
+MODEL:
+  MASK_FORMER:
+    # for the embeddings
+    GUIDE_FUNCTION_PATH: "./harmonic/guide_functions/komatsuna_rgb_train_coco_2_emb_16.json"

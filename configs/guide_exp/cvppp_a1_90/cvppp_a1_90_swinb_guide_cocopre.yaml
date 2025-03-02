@@ -1,0 +1,27 @@
+_BASE_: cvppp_a1_90_r50_guide.yaml
+OUTPUT_DIR: "./output/cvppp_a1_90_swinb_guide_cocopre/"
+MODEL:
+  BACKBONE:
+    NAME: "D2SwinTransformer"
+  SWIN:
+    EMBED_DIM: 128
+    DEPTHS: [2, 2, 18, 2]
+    NUM_HEADS: [4, 8, 16, 32]
+    WINDOW_SIZE: 12
+    APE: False
+    DROP_PATH_RATE: 0.3
+    PATCH_NORM: True
+    PRETRAIN_IMG_SIZE: 384
+  # WEIGHTS: "swin_base_patch4_window12_384_22k.pkl"
+  WEIGHTS: "pretrained/swinb_in21k_coco_ins.pkl"
+  PIXEL_MEAN: [123.675, 116.280, 103.530]
+  PIXEL_STD: [58.395, 57.120, 57.375]
+TEST:
+  EVAL_PERIOD: 100 # every 10 epochs
+SOLVER:
+  # GRAD_ACCU_STEPS: 4 # for grad accumulation
+  IMS_PER_BATCH: 12 # batch size
+  MAX_ITER: 10000 # 1000 epochs
+  STEPS: (9000, 9500) # (MAX_ITER * 0.9, MAX_ITER * 0.95)
+  BASE_LR: 0.0001
+

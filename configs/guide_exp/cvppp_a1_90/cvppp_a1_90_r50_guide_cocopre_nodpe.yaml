@@ -1,0 +1,15 @@
+_BASE_: cvppp_a1_90_r50_guide.yaml
+OUTPUT_DIR: "./output/cvppp_a1_90_r50_guide_cocopre_nodpe/"
+MODEL:
+  # WEIGHTS: "detectron2://ImageNetPretrained/torchvision/R-50.pkl"
+  WEIGHTS: "./pretrained/r50_coco_ins.pkl"
+  MASK_FORMER:
+    USE_DPE: False
+TEST:
+  EVAL_PERIOD: 100 # every 10 epochs
+SOLVER:
+  # GRAD_ACCU_STEPS: 4 # for grad accumulation
+  IMS_PER_BATCH: 12 # batch size
+  MAX_ITER: 10000 # 1000 epochs
+  STEPS: (9000, 9500) # (MAX_ITER * 0.9, MAX_ITER * 0.95)
+  BASE_LR: 0.0001

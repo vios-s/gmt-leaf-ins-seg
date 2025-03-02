@@ -1,0 +1,6 @@
+_BASE_: msu_pid_r50_baseline_cocopre_0.yaml
+OUTPUT_DIR: "./output/msu_pid_r50_baseline_cocopre_2/"
+DATASETS:
+  TRAIN: ('msu_pid_arabidopsis_train_coco_2',) # 396 images
+  TEST: ('msu_pid_arabidopsis_val_coco_2',) # 72 images
+  # TEST: ('msu_pid_arabidopsis_test_coco_2',) # 108 images
