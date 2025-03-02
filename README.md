@@ -2,11 +2,16 @@
 Official repository for GMT: Guided Mask Transformer for Leaf Instance Segmentation (https://arxiv.org/abs/2406.17109), accepted at IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2025 as an oral presentation.
 
 ## About the repo
+- You can download the following from +++
+  - Datasets (split to train/val/test)
+  - COCO pretrained weights (for initialising GMT training)
+  - Trained GMT checkpoints
 - Model architectures are stored at ./mask2former (e.g., guide_xxx.py)
-- Method of obtaining guide functions is stored at ./harmonic
-- Configuration files for different datasets are stored at ./configs
+- Method of obtaining guide functions: ./harmonic/get_embeddings.py
+  - Fitted guide functions for different datasets: ./harmonic/guide_functions
+- Configuration files for different datasets: ./configs
 - Training code: ./guide_train_net.py
-- Results as shown in the paper: ./submission/results_in_paper
+- Results in the paper: ./submission/results_in_paper
 
 ## Acknowledgements
 We thank the authors of the following repositories for opening source their code:
