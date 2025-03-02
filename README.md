@@ -7,8 +7,8 @@ Official repository for GMT: Guided Mask Transformer for Leaf Instance Segmentat
   - COCO pretrained weights (for initialising GMT training)
   - Trained GMT checkpoints
 - Model architectures are stored at ./mask2former (e.g., guide_xxx.py)
-- Method of obtaining guide functions: ./harmonic/get_embeddings.py
-  - Fitted guide functions for different datasets: ./harmonic/guide_functions
+- Method of training guide functions: ./harmonic/get_embeddings.py
+  - Trained guide functions for different datasets: ./harmonic/guide_functions
 - Configuration files for different datasets: ./configs
 - Training code: ./guide_train_net.py
 - Results in the paper: ./submission/results_in_paper
