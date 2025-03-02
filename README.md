@@ -2,6 +2,7 @@
 Official repository for GMT: Guided Mask Transformer for Leaf Instance Segmentation (https://arxiv.org/abs/2406.17109), accepted at IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2025 as an oral presentation.
 
 ## About the repo
+- Install libs using environment.yml
 - GMT model architectures are stored at ./mask2former (e.g., guide_xxx.py)
 - Method of training guide functions: ./harmonic/get_embeddings.py
   - Trained guide functions for different datasets: ./harmonic/guide_functions
