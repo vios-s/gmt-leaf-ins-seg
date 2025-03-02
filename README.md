@@ -2,7 +2,7 @@
 Official repository for GMT: Guided Mask Transformer for Leaf Instance Segmentation (https://arxiv.org/abs/2406.17109), accepted at IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2025 as an oral presentation.
 
 ## About the repo
-- You can download the following from +++
+- Download the following from +++
   - Datasets (split to train/val/test)
   - COCO pretrained weights (for initialising GMT training)
   - Trained GMT checkpoints
