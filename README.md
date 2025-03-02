@@ -5,7 +5,8 @@ Official repository for GMT: Guided Mask Transformer for Leaf Instance Segmentat
 - Model architectures are stored at ./mask2former (e.g., guide_xxx.py)
 - Method of obtaining guide functions is stored at ./harmonic
 - Configuration files for different datasets are stored at ./configs
-- Training code is ./guide_train_net.py
+- Training code: ./guide_train_net.py
+- Results as shown in the paper: ./submission/results_in_paper
 
 ## Acknowledgements
 We thank the authors of the following repositories for opening source their code:
