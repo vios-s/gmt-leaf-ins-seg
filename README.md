@@ -6,7 +6,7 @@ Official repository for GMT: Guided Mask Transformer for Leaf Instance Segmentat
 - Method of training guide functions: ./harmonic/get_embeddings.py
   - Trained guide functions for different datasets: ./harmonic/guide_functions
 - Configuration files for different datasets: ./configs
-- Training code: ./guide_train_net.py
+- GMT Training code: ./guide_train_net.py
 - Results in the paper: ./submission/results_in_paper
 
 ## Progressing...
